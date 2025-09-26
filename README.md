@@ -36,4 +36,16 @@ To create a new git user profile, use the `--create, -c` option and follow the p
 
 ```bash
 sg -c <name>
+Creating new git user profile: test
+Enter your name: Test User
+Enter your email: test@nomail.com
+Enter path to SSH private key: /Users/test/.ssh/pubkey.pub
+```
+
+## Switching profiles
+
+Using the above example, to switch to the *test* profile, run:
+
+```bash
+sg test
 ```
