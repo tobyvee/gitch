@@ -9,7 +9,7 @@ It unloads the all existing ssh keys from `ssh-agent`, loads the key for the spe
 ## Usage
 
 ```bash
-Usage: /usr/local/bin/sg <profile>
+Usage: sg <profile>
 
 Options:
   -h, --help      Show this help message and exit
@@ -18,7 +18,7 @@ Options:
   -l, --load      Load a git user config and add it to the SSH agent. Default action.
       --list      List all available git user profiles
 
-Example: /usr/local/bin/sg work
+Example: sg work
 ```
 
 ## Install
