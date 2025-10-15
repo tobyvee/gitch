@@ -4,8 +4,6 @@ A helper utility for managing and switching between global git user profiles.
 
 It unloads the all existing ssh keys from `ssh-agent`, loads the key for the specified profile, and sets the global git user name and email.
 
-*sg is an acronym for 'switch git'.*
-
 ## Usage
 
 ```bash
@@ -23,12 +21,21 @@ Example: gitch work
 
 ## Install
 
+### From source
+
 1. Clone the repository
-2. Run `make install` to install the binary to `/usr/local/bin/sg`
+2. Run `make install` to install the binary to `/usr/local/bin/gitch`
+
+### Homebrew
+
+```bash
+brew tap tobyvee/tap
+brew install gitch
+```
 
 ## Uninstall
 
-1. Run `make uninstall` to remove the binary from `/usr/local/bin/sg`
+1. Run `make uninstall` to remove the binary from `/usr/local/bin/gitch`
 
 ## Creating a new profile
 
