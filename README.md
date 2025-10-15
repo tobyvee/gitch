@@ -1,4 +1,4 @@
-# sg(1)
+# gitch(1)
 
 A helper utility for managing and switching between global git user profiles.
 
@@ -9,7 +9,7 @@ It unloads the all existing ssh keys from `ssh-agent`, loads the key for the spe
 ## Usage
 
 ```bash
-Usage: sg <profile>
+Usage: gitch <profile>
 
 Options:
   -h, --help      Show this help message and exit
@@ -18,7 +18,7 @@ Options:
   -l, --load      Load a git user config and add it to the SSH agent. Default action.
       --list      List all available git user profiles
 
-Example: sg work
+Example: gitch work
 ```
 
 ## Install
@@ -35,7 +35,7 @@ Example: sg work
 To create a new git user profile, use the `--create, -c` option and follow the prompts:
 
 ```bash
-sg -c <name>
+gitch -c <name>
 Creating new git user profile: test
 Enter your name: Test User
 Enter your email: test@nomail.com
@@ -47,5 +47,5 @@ Enter path to SSH private key: /Users/test/.ssh/pubkey.pub
 Using the above example, to switch to the *test* profile, run:
 
 ```bash
-sg test
+gitch test
 ```
