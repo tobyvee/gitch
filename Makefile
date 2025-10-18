@@ -1,8 +1,8 @@
 .PHONY: install uninstall
 
 install:
-	cp -v sg.sh /usr/local/bin/sg
-	chmod +x /usr/local/bin/sg
+	cp -v gitch.sh /usr/local/bin/gitch
+	chmod +x /usr/local/bin/gitch
 
 uninstall:
-	rm /usr/local/bin/sg
+	rm /usr/local/bin/gitch
