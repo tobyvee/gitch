@@ -2,7 +2,7 @@
 
 A helper utility for managing and switching between global git user profiles.
 
-It unloads the all existing ssh keys from `ssh-agent`, loads the key for the specified profile, and sets the global git user name and email.
+It unloads all existing ssh keys from `ssh-agent`, loads the key for the specified profile, and sets the global git user name and email.
 
 ## Usage
 
@@ -43,7 +43,7 @@ To create a new git user profile, use the `--create, -c` option and follow the p
 
 ```bash
 gitch -c <name>
-Creating new git user profile: test
+Creating new git user profile: <name>
 Enter your name: Test User
 Enter your email: test@nomail.com
 Enter path to SSH private key: /Users/test/.ssh/pubkey.pub
@@ -51,8 +51,8 @@ Enter path to SSH private key: /Users/test/.ssh/pubkey.pub
 
 ## Switching profiles
 
-Using the above example, to switch to the *test* profile, run:
+Using the above example, to switch to the *<name>* profile, run:
 
 ```bash
-gitch test
+gitch <name>
 ```
