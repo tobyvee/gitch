@@ -4,6 +4,8 @@ set -euo pipefail
 
 VERSION=1.0.0
 
+CONFIG_PATH="$HOME/.config/gitch"
+
 function usage {
   echo ""
   echo "Usage: $0 <git-alias>"
@@ -43,7 +45,7 @@ function ensure_ssh_agent {
 
 function create {
   local alias="$1"
-  local config_dir="$HOME/.config/sg"
+  local config_dir="$CONFIG_PATH"
   local config_file="$config_dir/$alias.conf"
 
   mkdir -p "$config_dir"
@@ -122,7 +124,7 @@ function load {
 }
 
 function list_profiles {
-  local config_dir="$HOME/.config/switchgit"
+  local config_dir="$CONFIG_PATH"
 
   if [ ! -d "$config_dir" ]; then
     echo "No git user profiles found"
