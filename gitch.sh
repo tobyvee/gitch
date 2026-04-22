@@ -86,8 +86,7 @@ function add_ssh_agent {
 
 function load {
   local alias="$1"
-  local config_dir="$HOME/.config/sg"
-  local config_file="$config_dir/$alias.conf"
+  local config_file="$CONFIG_PATH/$alias.conf"
 
   if [ ! -f "$config_file" ]; then
     echo "Error: Git user profile '$alias' not found"
